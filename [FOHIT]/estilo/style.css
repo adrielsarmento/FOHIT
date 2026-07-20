@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+:root {
+  --orange_FOHIT: #FF9900;
+  --black_FOHIT: #1E1F22;
+  --yellow_FOHIT: #FFDD00;
+  --white_FOHIT: #ffffff;
+  --black_blue_FOHIT: #383e65;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-image: url(../estilo/1fc69a2863d1204f99e115fe2227fd30.jpg);
+  background-position: center;
+  background-size: cover;
+  /*background-attachment: fixed;*/
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  min-height: 100%;
+}
+
+img.FOHIT {
+  padding: 10px;
+  height: 200px;
+}
+
+h2#slogan {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.3rem;
+  margin: 10px;
+  background-color: var(--orange_FOHIT);
+  color: var(--white_FOHIT);
+  max-width: 388px;
+  box-shadow: inset 0px -10px 12px 2px black;
+}
+
+.Menu {
+  background-color: var(--orange_FOHIT);
+  border: 2px solid var(--black_FOHIT);
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.topic {
+  padding: 4px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white_FOHIT);
+}
+a:hover {
+  transition: 0.5s;
+  color: var(--black_FOHIT);
+}
+
+div#uma_apresentacao {
+  background-color: var(--black_blue_FOHIT);
+  width: 100%;
+  padding: 15px;
+  color: var(--white_FOHIT);
+}
+
+img#boas-vindas {
+  display: block;
+  padding: 10px;
+  height: 200px;
+}
+
+footer {
+  background-color: var(--orange_FOHIT);
+  color: var(--white_FOHIT);
+  border: 2px solid #1E1F22;
+  margin: 0px;
+  padding: 15px;
+}
+
+#footer {
+  color: var(--white_FOHIT);
+  text-align: center;
+}
