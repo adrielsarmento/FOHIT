@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="shortcut icon" href="[FOHIT].ico" type="favicon do FOHIT">
+  <style>
+    @charset "UTF-8";
+
+    @import url('https://fonts.cdnfonts.com/css/macromedia');
+
+    :root {
+      --orange_FOHIT: #FF9900;
+      --black_FOHIT: #1E1F22;
+      --white_FOHIT: #ffffff;
+    }
+
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    html, body {
+      background-color: #1E1F22;
+      font-family: 'Macromedia', sans-serif;
+    }
+
+    #Menu {
+      background-color: var(--orange_FOHIT);
+      border: 2px solid var(--black_FOHIT);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+
+    .topic {
+      background-color: var(--orange_FOHIT);
+      border: 2px solid var(--black_FOHIT);
+      padding-left: 15px;
+      transition: border-width 0.5s, border-color 0.5s;
+    }
+
+    .topic:hover {
+      border-left-width: 15px;
+      border-color: var(--black_FOHIT);
+      text-decoration: underline;
+    }
+
+    .aba {
+      color: var(--black_FOHIT);
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--black_FOHIT);
+      padding: 10px;
+    }
+
+    code {
+      margin: 10px;
+      color: var(--white_FOHIT);
+    }
+
+    legend {
+      text-align: center;
+      color: white;
+    }
+
+    .cadastrar {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+
+    #user {
+      color: white;
+      padding: 10px;
+      margin: 10px;
+    }
+
+    #email {
+      color: #ffffff;
+      padding: 10px;
+      margin: 10px;
+    }
+
+    input {
+      max-width: 555px;
+    }
+  </style>
+</head>
+<body>
+  <div id="menu">
+    
+    <div class="topic"><a href="index.html"><code class="aba">Voltar</code></a></div>
+
+  </div>
+
+  <form action="cadastro.php" method="get" autocomplete="on">
+
+    <fieldset>
+      <legend>Usuário</legend>
+
+      <p class="cadastrar">
+        <label for="inome" id="user">[USÚARIO]:</label>
+
+        <input type="text" name="nome" id="inome" minlength="15" maxlength="20" required placeholder="Nome do Usúario">
+        
+        <label for="imail" id="email">[E-MAIL]:</label>
+
+        <input type="email" name="email" id="imail" minlength="15" maxlength="20" required placeholder="E-mail">
+      </p>
+    </fieldset>
+
+  </form>
+
+  <script></script>
+</body>
+</html>
