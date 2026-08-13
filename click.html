@@ -5,24 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CLICK</title>
   <style>
-    #bloco {
+    @font-face {
+      font-family: 'Anton-Regular';
+      src: url(Anton/Anton-Regular.ttf) format(truetype);
+    }
+
+    body {
+      font-family: 'Anton-Regular', sans-serif;
+    }
+
+    .bloco {
+      display: block;
       background-color: blue;
       height: 200px;
       width: 200px;
       line-height: 200px;
       text-align: center;
+      border-radius: 10px;
+      box-shadow: 4px 4px 10px black;
+      margin: auto;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      background-color: red;
+      padding: 5px;
+      color: white;
+      box-shadow: 4px 4px 10px black;
+    }
+    a:hover {
+      color: black;
+      transition: 0.5s;
     }
   </style>
 </head>
 <body>
-  <div id="bloco">CLICK</div>
+  <div class="bloco">CLIQUE</div>
+  <a href="games.html">voltar</a>
   <script>
-    var a = window.document.getElementById('bloco')
+    var a = window.document.querySelector('div.bloco')
 
     a.addEventListener('click', clicar)
+    a.addEventListener('mouseout', saiu)
+    a.addEventListener('mouseenter', lá_ele)
 
     function clicar() {
-      a.inneHTML = 'clicou'
+      a.innerHTML = 'CLICOU'
+      a.style.background = 'green'
+    }
+    function saiu() {
+      a.innerHTML = 'SAIU'
+      a.style.background = 'red'
+    }
+    function lá_ele() {
+      a.innerHTML = 'ENTROU, LÁ ELE'
+      a.style.background = 'yellow'
     }
   </script>
 </body>
