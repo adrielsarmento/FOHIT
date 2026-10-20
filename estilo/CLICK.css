@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Anton-Regular';
+  src: url(Anton/Anton-Regular.ttf) format(truetype);
+}
+
+body {
+  font-family: 'Anton-Regular', sans-serif;
+}
+
+.bloco {
+  display: block;
+  background-color: blue;
+  height: 200px;
+  width: 200px;
+  line-height: 200px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px black;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background-color: red;
+  padding: 5px;
+  color: white;
+  box-shadow: 4px 4px 10px black;
+}
+
+a:hover {
+  color: black;
+  transition: 0.5s;
+}
